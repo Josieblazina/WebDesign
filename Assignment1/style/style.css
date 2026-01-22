@@ -9,18 +9,7 @@ background-color: beige;
 }
 
 p {
-    max-width: 60%; /* paragraph never gets wider than 60% of the screen */
-    margin: 0 auto; /* centers it horizontally */
+max-width: 60%; /* paragraph never gets wider than 60% of the screen */
+margin: 0 auto; /* centers it horizontally */
     }
-
-h2 {
-    max-width: 60%; /* paragraph never gets wider than 60% of the screen */
-    margin: 0 auto; /* centers it horizontally */
-        }
-
-h3 {
-    max-width: 60%; /* paragraph never gets wider than 60% of the screen */
-    margin: 0 auto; /* centers it horizontally */
-            }
-            
     
