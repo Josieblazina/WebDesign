@@ -5,11 +5,13 @@ background-color: darkgoldenrod;
 }
 
 h2 {
+padding: 15px;
 margin: 0 auto;
 text-align: center;
 }
 
 h3 {
+padding: 15px;
 margin: 0 auto;
 text-align: center;
 }
