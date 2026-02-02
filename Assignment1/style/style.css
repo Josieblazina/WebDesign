@@ -1,26 +1,73 @@
+body {
+    background-color: #e8dcc4;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.header {
+    background-color: #c9a961;
+    padding: 60px 20px;
+    text-align: center;
+}
+
 h1 {
-padding: 35px;
-text-align: center;
-background-color: darkgoldenrod;
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
 }
 
 h2 {
-padding: 15px;
-margin: 0 auto;
-text-align: center;
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+}
+
+.intro {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+.intro p {
+    margin: 0;
+}
+
+.divider {
+    text-align: center;
+    font-size: 24px;
+    color: #c9a961;
+    margin: 50px 0;
+}
+
+.quote-section {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
 }
 
 h3 {
-padding: 15px;
-margin: 0 auto;
-text-align: center;
+    margin: 0 0 15px 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-body {
-background-color: beige;
+.quote {
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px 0;
+    line-height: 1.6;
+    text-decoration: underline;
 }
 
 p {
-max-width: 60%; /* paragraph never gets wider than 60% of the screen */
-margin: 0 auto; /* centers it horizontally */
+    line-height: 1.6;
+    margin: 20px 0;
 }
