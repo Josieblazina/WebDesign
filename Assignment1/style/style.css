@@ -10,6 +10,7 @@ body {
     background-color: darkgoldenrod;
     padding: 60px 20px;
     text-align: center;
+    margin-top: 0;
 }
 
 h1 {
@@ -77,6 +78,7 @@ nav {
     background-color: darkgoldenrod;
     padding: 15px;
     text-align: center;
+    margin: 0;
 }
 
 nav ul {
@@ -87,16 +89,22 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav a {
     color: beige;
     text-decoration: none;
     font-size: 18px;
+    font-family: Georgia, serif;
+    font-weight: bold;
 }
 
-/* Image styling - ADD THIS */
+nav a:hover {
+    text-decoration: underline;
+}
+
+
 .intro img {
     max-width: 100%;
     margin-top: 20px;
