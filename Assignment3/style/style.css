@@ -55,13 +55,17 @@ h1 {
 }
 
 h2 {
-    margin: 10px 0 0 0;
-    padding: 0;
-    font-size: 20px;
-    color: #F5F5DC;
-    font-weight: normal;
+    text-align: center;
     font-family: 'Playfair Display', Georgia, serif;
-}
+    font-size: 32px;
+    color: #5a3e36;
+    margin: 40px 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #B8860B;
+    max-width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 .intro {
     max-width: 800px;
@@ -110,8 +114,10 @@ nav {
     background-color: #B8860B;
     padding: 15px;
     text-align: center;
-    margin: 0;
-}
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
 
 nav ul {
     list-style-type: none;
@@ -197,4 +203,14 @@ cite {
     opacity: 0.8;
     transform: scale(1.05);
     transition: all 0.3s ease;
+  }
+  legend {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #5a3e36;
+    font-family: 'Playfair Display', Georgia, serif;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #B8860B;
+    width: 100%;
   }
