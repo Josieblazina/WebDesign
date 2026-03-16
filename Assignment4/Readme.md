@@ -1,0 +1,3 @@
+## Reflection
+
+I really enjoyed working with both Flexbox and Grid throughout this assignment. Flexbox made it easy to align and space elements without having to guess with margins, especially for the navigation and blog preview cards. Grid was my favorite of the two, I loved how much control it gave me over layout, and being able to define the size and the ratio made integrating photos in my gallery seemless and very simple.
