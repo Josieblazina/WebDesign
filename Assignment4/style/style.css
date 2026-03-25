@@ -339,12 +339,75 @@ body {
     padding: 0 40px;
   }
  
-/* ===== FOOTER ===== */
+/* ===== FLEXBOX FOOTER ===== */
 footer {
-  text-align: center;
-  padding: 30px;
-  font-size: 0.8rem;
+  background-color: #2c2c2c;
+  margin-top: 80px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 60px;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 260px;
+}
+
+.footer-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #f5f0eb;
+}
+
+.footer-tagline {
+  font-size: 0.82rem;
+  color: #888;
+  line-height: 1.6;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-nav-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.footer-nav a {
+  text-decoration: none;
   color: #aaa;
-  margin-top: 60px;
-  border-top: 1px solid #eee;
+  font-size: 0.88rem;
+  transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+  color: #f5f0eb;
+}
+
+.footer-credit {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: right;
+}
+
+.footer-credit p {
+  font-size: 0.8rem;
+  color: #666;
 }
