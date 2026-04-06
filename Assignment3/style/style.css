@@ -221,49 +221,4 @@ cite {
     border-radius: 4px;
   }
 
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 40px;
-    border-top: 1px solid #eee;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
   
-  .footer-brand {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
-  
-  .footer-name {
-    font-weight: bold;
-    color: #333;
-    font-size: 0.95rem;
-  }
-  
-  .footer-tagline {
-    font-size: 0.8rem;
-    color: #aaa;
-  }
-  
-  .footer-links {
-    display: flex;
-    gap: 24px;
-  }
-  
-  .footer-links a {
-    text-decoration: none;
-    color: #888;
-    font-size: 0.85rem;
-  }
-  
-  .footer-links a:hover {
-    color: #333;
-  }
-  
-  .footer-credit {
-    font-size: 0.8rem;
-    color: #aaa;
-  }
