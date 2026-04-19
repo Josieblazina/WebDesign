@@ -1,0 +1,280 @@
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio – Josie Blazina</title>
+  <link rel="stylesheet" href="style/style.css">
+  <style>
+    /* ===== HERO INTRO ===== */
+    .home-hero {
+      text-align: center;
+      padding: 60px 40px 32px;
+    }
+ 
+    .home-hero h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 14px;
+    }
+ 
+    .home-hero p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #666;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+ 
+    /* ===== TILE GRID ===== */
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+ 
+    .project-tile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      text-align: center;
+      padding: 48px 32px 40px;
+      min-height: 480px;
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+    }
+ 
+    .project-tile-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform 0.5s ease;
+    }
+ 
+    .project-tile:hover .project-tile-img {
+      transform: scale(1.03);
+    }
+ 
+    .project-tile::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0) 25%,
+        rgba(0,0,0,0.62) 100%
+      );
+      pointer-events: none;
+    }
+ 
+    .project-tile-dark {
+      background-color: #1a1a1a;
+    }
+ 
+    .project-tile-light {
+      background-color: #f0ece6;
+    }
+ 
+    .project-tile-light::after {
+      display: none;
+    }
+ 
+    .tile-content {
+      position: relative;
+      z-index: 1;
+    }
+ 
+    .tile-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: rgba(255,255,255,0.72);
+    }
+ 
+    .project-tile-light .tile-label {
+      color: #8fafa7;
+    }
+ 
+    .tile-title {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      max-width: 340px;
+      margin: 0 auto 10px;
+      color: #fff;
+    }
+ 
+    .project-tile-light .tile-title {
+      color: #1a1a1a;
+    }
+ 
+    .tile-sub {
+      font-size: 14px;
+      margin-bottom: 4px;
+      color: rgba(255,255,255,0.68);
+    }
+ 
+    .project-tile-light .tile-sub {
+      color: #777;
+    }
+ 
+    .tile-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 18px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+ 
+    .tile-btn {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 9px 20px;
+      border-radius: 980px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      letter-spacing: 0.01em;
+    }
+ 
+    .tile-btn-sage {
+      background-color: #8fafa7;
+      color: #fff;
+    }
+    .tile-btn-sage:hover {
+      background-color: #5a8a82;
+    }
+ 
+    .tile-btn-outline-light {
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.65);
+    }
+    .tile-btn-outline-light:hover {
+      background-color: rgba(255,255,255,0.15);
+    }
+ 
+    .tile-btn-outline-dark {
+      background-color: transparent;
+      color: #333;
+      border: 1px solid #aaa;
+    }
+    .tile-btn-outline-dark:hover {
+      background-color: #333;
+      color: #fff;
+    }
+ 
+    @media (max-width: 700px) {
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+ 
+  <div class="nav">
+    <a href="index.html" class="nav-brand">My Portfolio</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="flexbox.html">Work</a>
+      <a href="grid.html">Gallery</a>
+      <a href="blog-post.html">About</a>
+    </div>
+  </div>
+ 
+  <div class="home-hero">
+    <h1>Media Arts Portfolio</h1>
+    <p>A collection of work exploring visual arts, graphic design, and creative concepts - by Josie Blazina.</p>
+  </div>
+ 
+  <div class="project-grid">
+ 
+    <!-- Tile 1: Work -->
+    <div class="project-tile">
+      <img class="project-tile-img" src="images/works.jpg" alt="Featured work">
+      <div class="tile-content">
+        <p class="tile-label">Featured Projects</p>
+        <h2 class="tile-title">Work</h2>
+        <p class="tile-sub">Design concepts &amp; creative projects.</p>
+        <div class="tile-buttons">
+          <a class="tile-btn tile-btn-sage" href="flexbox.html">View Work</a>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Tile 2: Gallery (light) -->
+    <div class="project-tile project-tile-dark">
+      <img class="project-tile-img" src="images/projfinal.png" alt="About">
+      <div class="tile-content">
+        <p class="tile-label">Art &amp; Design</p>
+        <h2 class="tile-title">Gallery</h2>
+        <p class="tile-sub" style="color:#777;">Visual pieces from I Meant to Tell You.</p>
+        <div class="tile-buttons">
+          <a class="tile-btn tile-btn-sage" href="grid.html">Explore</a>
+          <a class="tile-btn tile-btn-outline-dark" href="grid.html">See All</a>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Tile 3: About -->
+    <div class="project-tile project-tile-dark">
+      <img class="project-tile-img" src="images/me.jpg" alt="About">
+      <div class="tile-content">
+        <p class="tile-label">BEHIND THE WORK</p>
+        <h2 class="tile-title">About Me</h2>
+        <p class="tile-sub">Designer, student, and creative.</p>
+        <div class="tile-buttons">
+          <a class="tile-btn tile-btn-outline-light" href="blog-post.html">Read More</a>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Tile 4: Contact -->
+    <div class="project-tile">
+      <img class="project-tile-img" src="images/contact.jpg" alt="Contact">
+      <div class="tile-content">
+        <p class="tile-label">Get in Touch</p>
+        <h2 class="tile-title">Contact</h2>
+        <p class="tile-sub">Let's work together.</p>
+        <div class="tile-buttons">
+          <a class="tile-btn tile-btn-sage" href="contact.html">Say Hello</a>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+ 
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <p class="footer-name">Josie Blazina</p>
+        <p class="footer-tagline">Media Arts &mdash; Graphic Design &amp; Brand Development</p>
+      </div>
+      <div class="footer-nav">
+        <p class="footer-nav-label">Pages</p>
+        <a href="index.html">Home</a>
+        <a href="flexbox.html">Work</a>
+        <a href="grid.html">Gallery</a>
+        <a href="blog-post.html">About</a>
+      </div>
+      <div class="footer-credit">
+        <p>&copy; 2025 Josie Blazina</p>
+        <p>Built with HTML &amp; CSS</p>
+      </div>
+    </div>
+  </footer>
+ 
+</body>
+</html>
+ 

@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Josie Blazina</title>
+  <link rel="stylesheet" href="style/style.css">
+  <style>
+    .contact-content {
+      max-width: 640px;
+      margin: 70px auto 80px;
+      padding: 0 40px;
+    }
+ 
+    .contact-content h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 14px;
+    }
+ 
+    .contact-content > p {
+      font-size: 0.97rem;
+      line-height: 1.8;
+      color: #666;
+      margin-bottom: 40px;
+    }
+ 
+    .contact-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+ 
+    .contact-card {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 22px 28px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      text-decoration: none;
+      color: #333;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+ 
+    .contact-card:hover {
+      box-shadow: 0 6px 20px rgba(0,0,0,0.11);
+      transform: translateY(-2px);
+    }
+ 
+    .contact-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      background-color: #f0ece6;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+ 
+    .contact-card-text {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+ 
+    .contact-card-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #8fafa7;
+    }
+ 
+    .contact-card-value {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #1a1a1a;
+    }
+  </style>
+</head>
+<body>
+ 
+  <div class="nav">
+    <a href="index.html" class="nav-brand">My Portfolio</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="flexbox.html">Work</a>
+      <a href="grid.html">Gallery</a>
+      <a href="blog-post.html">About</a>
+    </div>
+  </div>
+ 
+  <div class="contact-content">
+    <h1>Get in Touch</h1>
+    <p>
+      I'm always open to new projects, collaborations, or just a good conversation 
+      about design and creative work. Feel free to reach out.
+    </p>
+ 
+    <div class="contact-cards">
+ 
+      <a class="contact-card" href="mailto:josie@example.com">
+        <div class="contact-icon">✉️</div>
+        <div class="contact-card-text">
+          <span class="contact-card-label">Email</span>
+          <span class="contact-card-value">blazina.creative@gmail.com</span>
+        </div>
+      </a>
+ 
+      <a class="contact-card" href="#">
+        <div class="contact-icon">💼</div>
+        <div class="contact-card-text">
+          <span class="contact-card-label">LinkedIn</span>
+          <span class="contact-card-value">linkedin.com/in/josieblazina</span>
+        </div>
+      </a>
+ 
+      <a class="contact-card" href="#">
+        <div class="contact-icon">📷</div>
+        <div class="contact-card-text">
+          <span class="contact-card-label">Instagram</span>
+          <span class="contact-card-value">@josieblazina</span>
+        </div>
+      </a>
+ 
+    </div>
+ 
+    <a href="index.html" class="back-link" style="margin-top: 40px;">&larr; Back to Home</a>
+  </div>
+ 
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <p class="footer-name">Josie Blazina</p>
+        <p class="footer-tagline">Media Arts &mdash; Graphic Design &amp; Brand Development</p>
+      </div>
+      <div class="footer-nav">
+        <p class="footer-nav-label">Pages</p>
+        <a href="index.html">Home</a>
+        <a href="flexbox.html">Work</a>
+        <a href="grid.html">Gallery</a>
+        <a href="blog-post.html">About</a>
+      </div>
+      <div class="footer-credit">
+        <p>&copy; 2025 Josie Blazina</p>
+        <p>Built with HTML &amp; CSS</p>
+      </div>
+    </div>
+  </footer>
+ 
+</body>
+</html>
