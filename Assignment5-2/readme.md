@@ -1,0 +1,3 @@
+I am doing well! Designing a component based off another one proved to be very interesting and helpful to replicate and personalize from there. Mine was inspired by the Apple 2x2 products grid and I think it made for a very good site navigation grid. 
+
+There's nothing too specific I can think of for what I need from you in these final weeks, but I cannot thank you enough for being so understanding with late work and being so fast to respond to emails! Thanks so much! - Jo 
