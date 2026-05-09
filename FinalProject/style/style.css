@@ -706,3 +706,63 @@ h1, h2, h3, h4 {
     height: 260px;
   }
 }
+
+#openPopup {
+  background-color: #8fafa7;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 980px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  animation: pulse 3s ease-in-out infinite;
+}
+#openPopup:hover { background-color: #5a8a82; }
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+  background-color: #f5f0eb;
+  padding: 36px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 300px;
+}
+#popup.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+#popup h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+#popup input {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+#sendForm, #closePopup {
+  padding: 9px 20px;
+  border-radius: 980px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.88rem;
+}
+#sendForm { background-color: #8fafa7; color: #fff; }
+#sendForm:hover { background-color: #5a8a82; }
+#closePopup { background-color: #e8e3dd; color: #333; }
+#closePopup:hover { background-color: #d6d0ca; }

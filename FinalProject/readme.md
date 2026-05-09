@@ -1,3 +1,12 @@
+What's something new you learned while building your site?
+The biggest thing I learned was how CSS Grid and Flexbox work together rather than being interchangeable. I used Grid for the tile layout on the homepage and Flexbox for the blog preview card on the work page, and understanding when to use each one made my layouts feel a lot more intentional. I also learned how to use Bootstrap's navbar in a way that actually fits a custom design rather than looking like a default Bootstrap site.
+How did you balance creativity with usability?
+I tried to let the project itself guide the design decisions. Since I Meant to Tell You is a quiet, handwritten, tactile concept, I kept the site warm and understated rather than loud or decorative. Every interactive element like the tile hover effects and the contact form animation serves a purpose, either guiding the user or giving them feedback, rather than just being there to look interesting.
+What are you most proud of in your final project?
+I'm most proud of how cohesive the site ended up feeling. The color palette, typography, image choices, and layout all feel like they belong to the same thing, which I think is the hardest part of design to get right. The homepage tile grid especially came together in a way that feels polished and intentional.
+How do you see yourself using these skills later on?
+I can see myself using these skills to build out a real portfolio site as I continue developing work after this class. Understanding how to structure a site, style it consistently, and make it responsive is genuinely useful for anyone working in a creative field, and I feel like I have a real foundation now rather than just a surface-level understanding.
+
 # Site Plan
 
 ## Home Page
